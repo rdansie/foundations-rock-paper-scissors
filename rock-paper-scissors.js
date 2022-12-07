@@ -61,7 +61,7 @@ let computerScore = 0;
 
 function game() {
     for (let i = 0; i < 5; i++){
-        console.log(playRound(getComputerChoice(),"scissors"));
+        console.log(playRound(getComputerChoice(),playerSelection()));
     }
     if (playerScore > computerScore) {
         if (playerScore-computerScore == 1) {
